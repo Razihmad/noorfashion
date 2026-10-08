@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Noor Fashion with Ziya | Hand-embroidered outfits, made your way</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Figtree:wght@400;500;600&display=swap">
+<style>
+:root{--bg:#fbeeed;--bg2:#f4dcda;--ink:#2e1119;--muted:#6f4a52;--wine:#6b1f2e;--wine2:#4a1220;--gold:#a8802f;--card:#fff8f7;--line:#c9a0a4;--on-wine:#fbeeed;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1c0b11;--bg2:#2a1019;--ink:#f6e4e2;--muted:#c9a5a9;--wine:#d8838f;--wine2:#f0b3ba;--gold:#d4aa5a;--card:#26101a;--line:#6b3a45;--on-wine:#2a0e17}}
+:root[data-theme="dark"]{--bg:#1c0b11;--bg2:#2a1019;--ink:#f6e4e2;--muted:#c9a5a9;--wine:#d8838f;--wine2:#f0b3ba;--gold:#d4aa5a;--card:#26101a;--line:#6b3a45;--on-wine:#2a0e17}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 Figtree,system-ui,sans-serif}
+h1,h2,h3{font-family:Fraunces,Georgia,serif;font-weight:600;line-height:1.1;margin:0}
+a{color:inherit}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);border-bottom:2px dashed var(--line)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;height:62px}
+.logo{font-family:Fraunces,Georgia,serif;font-weight:600;font-size:19px;text-decoration:none;color:var(--wine)}
+.logo small{font:500 13px Figtree,sans-serif;color:var(--muted);margin-left:6px}
+nav{display:flex;align-items:center;gap:20px;font-weight:500}
+nav a{text-decoration:none}
+nav a.hide-sm{display:none}
+@media(min-width:720px){nav a.hide-sm{display:inline}}
+.btn{display:inline-block;background:var(--wine);color:var(--on-wine);padding:12px 22px;border-radius:999px;font-weight:600;text-decoration:none;border:0;cursor:pointer;font-size:16px;font-family:inherit}
+.btn:hover{background:var(--wine2)}
+.btn.ghost{background:transparent;color:var(--wine);border:2px solid var(--wine)}
+.btn.ghost:hover{background:var(--bg2)}
+.hero{padding:44px 0 56px}
+.hero .wrap{display:grid;gap:36px;align-items:center}
+@media(min-width:820px){.hero .wrap{grid-template-columns:1.15fr .85fr}}
+.hero h1{font-size:clamp(38px,6.4vw,66px);letter-spacing:-.01em}
+.hero p{font-size:19px;color:var(--muted);max-width:30em;margin:18px 0 26px}
+.cta{display:flex;flex-wrap:wrap;gap:12px}
+.hoop{width:min(100%,380px);aspect-ratio:1;margin:0 auto;border-radius:50%;padding:18px;background:linear-gradient(145deg,#c89b5e,#8a5f2b);box-shadow:0 8px 0 -4px var(--line)}
+.hoop-in{width:100%;height:100%;border-radius:50%;position:relative;overflow:hidden;background:radial-gradient(circle at 30% 25%,#8e2a3d,#4a1220 70%);display:grid;place-items:center}
+.hoop-in::before{content:"";position:absolute;inset:14px;border-radius:50%;border:2px dashed #e6c88a}
+.hoop-in span{font-family:Fraunces,Georgia,serif;font-size:clamp(46px,9vw,76px);color:#f1d9a3;letter-spacing:.04em;position:relative}
+.hoop-in em{position:absolute;bottom:17%;font:500 14px Figtree,sans-serif;color:#f1d9a3;font-style:normal;letter-spacing:.08em}
+section{padding:54px 0}
+section.alt{background:var(--bg2);border-top:2px dashed var(--line);border-bottom:2px dashed var(--line)}
+h2{font-size:clamp(28px,4.4vw,42px);margin-bottom:8px}
+.lede{color:var(--muted);margin:0 0 28px;max-width:34em}
+.grid{display:grid;gap:22px;grid-template-columns:repeat(auto-fill,minmax(220px,1fr))}
+.item{background:var(--card);border:1.5px dashed var(--line);padding:12px 12px 18px;display:flex;flex-direction:column;border-radius:6px}
+.sw{aspect-ratio:4/5;border-radius:999px 999px 6px 6px;margin-bottom:14px;position:relative;overflow:hidden}
+.sw::after{content:"Add photo";position:absolute;bottom:10px;left:0;right:0;text-align:center;font-size:12px;color:rgba(255,255,255,.75)}
+.item h3{font-size:20px}
+.item p{margin:6px 0 14px;color:var(--muted);font-size:15px;flex:1}
+.item .btn{text-align:center;padding:10px 16px;font-size:15px}
+.cols{display:grid;gap:30px}
+@media(min-width:820px){.cols{grid-template-columns:1fr 1fr;align-items:start}}
+form{background:var(--card);border:2px dashed var(--line);padding:22px;display:grid;gap:14px;border-radius:6px}
+label{font-weight:600;font-size:15px;display:grid;gap:6px}
+input,select,textarea{font:inherit;color:var(--ink);background:var(--bg);border:1.5px solid var(--line);border-radius:6px;padding:11px 12px;width:100%}
+textarea{min-height:90px;resize:vertical}
+.small{font-size:14px;color:var(--muted);margin:0}
+.steps{list-style:none;margin:0;padding:0;display:grid;gap:18px;counter-reset:s}
+.steps li{counter-increment:s;padding-left:54px;position:relative}
+.steps li::before{content:counter(s);position:absolute;left:0;top:0;width:38px;height:38px;border-radius:50%;border:2px dashed var(--wine);display:grid;place-items:center;font:600 18px Fraunces,Georgia,serif;color:var(--wine)}
+.steps b{display:block;font-size:18px}
+.steps span{color:var(--muted)}
+.trust{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}
+.trust div{border-left:3px solid var(--gold);padding:2px 0 2px 14px}
+.trust b{display:block}
+.rev{border:1.5px dashed var(--line);padding:18px;color:var(--muted);font-size:15px;border-radius:6px;background:var(--card)}
+footer{padding:36px 0 90px;border-top:2px dashed var(--line);color:var(--muted);font-size:15px}
+footer .wrap{display:flex;flex-wrap:wrap;gap:12px 28px;justify-content:space-between}
+.wa{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:6;box-shadow:0 4px 14px rgba(0,0,0,.25)}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+<a class="logo" href="#top">Noor Fashion<small>with Ziya</small></a>
+<nav><a class="hide-sm" href="#shop">Shop</a><a class="hide-sm" href="#custom">Custom orders</a><a class="hide-sm" href="#contact">Delivery</a><a class="btn wa-link" href="#">WhatsApp</a></nav>
+</div></header>
+
+<main id="top">
+<div class="hero"><div class="wrap">
+<div>
+<h1>Hand-embroidered outfits, stitched to your colour.</h1>
+<p>Sarees, suits and dupattas with hand embellishment, made in Delhi at a price that fits your budget. Cash on delivery available.</p>
+<div class="cta"><a class="btn wa-link" href="#">Order on WhatsApp</a><a class="btn ghost" href="#custom">Request a custom design</a></div>
+</div>
+<div class="hoop" aria-hidden="true"><div class="hoop-in"><span>NF</span><em>NOOR FASHION</em></div></div>
+</div></div>
+
+<section id="shop" class="alt"><div class="wrap">
+<h2>Current collection</h2>
+<p class="lede">Tap any piece to ask about size, colour and price on WhatsApp. Your message is already written.</p>
+<div class="grid" id="products"></div>
+</div></section>
+
+<section id="custom"><div class="wrap cols">
+<div>
+<h2>Want it in a different colour?</h2>
+<p class="lede">Customising is what we do most. Tell us the garment, the colour and the embroidery you like, and we will reply on WhatsApp with a quote.</p>
+<ol class="steps">
+<li><b>Send your idea</b><span>Fill the form, then add a reference photo in the chat.</span></li>
+<li><b>Get a quote and a design preview</b><span>We trace and confirm the design with you before stitching.</span></li>
+<li><b>Receive it at home</b><span>Dispatch updates on WhatsApp. Pay on delivery if you prefer.</span></li>
+</ol>
+</div>
+<form id="cf">
+<label>Your name<input name="n" autocomplete="name" required></label>
+<label>What would you like made?<select name="g"><option>Saree</option><option>Suit with dupatta</option><option>Anarkali</option><option>Sharara set</option><option>Dupatta only</option><option>Something else</option></select></label>
+<label>Colour you want<input name="c" placeholder="e.g. copper brown, mahroon"></label>
+<label>Embroidery or design notes<textarea name="d" placeholder="Flowers on the neckline, gold border..."></textarea></label>
+<button class="btn" type="submit">Send on WhatsApp</button>
+<p class="small">WhatsApp opens with your details filled in. Nothing is sent until you press send there.</p>
+</form>
+</div></section>
+
+<section class="alt" id="contact"><div class="wrap">
+<h2>Delivery and payment</h2>
+<p class="lede">Plain answers, so you do not have to ask.</p>
+<div class="trust">
+<div><b>Cash on delivery</b>Available on most orders.</div>
+<div><b>Made in Delhi</b>Dispatch updates are shared on WhatsApp.</div>
+<div><b>Custom orders</b>Colour and embroidery changes on request.</div>
+<div><b>Questions</b>Message us any time on WhatsApp.</div>
+</div>
+</div></section>
+
+<section><div class="wrap">
+<h2>What customers say</h2>
+<p class="lede">Real client messages go here as screenshots.</p>
+<div class="grid"><div class="rev">Client review screenshot 1</div><div class="rev">Client review screenshot 2</div><div class="rev">Client review screenshot 3</div></div>
+</div></section>
+</main>
+
+<footer><div class="wrap">
+<span>Noor Fashion with Ziya, Delhi. Owned by Ziya Noor.</span>
+<span><a href="https://www.instagram.com/noor_._fashion/">Instagram</a> &nbsp; <a href="https://www.youtube.com/@noorfasion158">YouTube</a> &nbsp; <a href="tel:+918447347974">+91 84473 47974</a></span>
+</div></footer>
+<a class="btn wa wa-link" href="#">Chat on WhatsApp</a>
+
+<script>
+var NUM="918447347974";
+function wa(t){return "https://wa.me/"+NUM+"?text="+encodeURIComponent(t)}
+document.querySelectorAll(".wa-link").forEach(function(a){a.href=wa("Hi Noor Fashion, I would like to know more.");a.target="_blank";a.rel="noopener"});
+var P=[
+["Velvet saree with zardozi border","Deep maroon velvet, hand-embroidered border.","linear-gradient(160deg,#8e2a3d,#4a1220)"],
+["Embroidered anarkali","Flowing white anarkali with silver sleeve work.","linear-gradient(160deg,#f5efe9,#cdbfb5)"],
+["Hand-embellished dupatta","Beads and sequins, made in your choice of colour.","linear-gradient(160deg,#d9a6c3,#8a5a86)"],
+["Sharara set","Festive sharara set with gota lace.","linear-gradient(160deg,#b7b43a,#6d6b17)"],
+["Ombre suit with dupatta","Teal to royal blue with detailed neck embroidery.","linear-gradient(160deg,#2c93a8,#1c3f9c)"],
+["Embroidered hand bag","Floral hand embroidery on a navy bag.","linear-gradient(160deg,#27385a,#101b33)"]];
+document.getElementById("products").innerHTML=P.map(function(p){return '<article class="item"><div class="sw" style="background:'+p[2]+'"></div><h3>'+p[0]+'</h3><p>'+p[1]+'</p><a class="btn ghost" target="_blank" rel="noopener" href="'+wa("Hi Noor Fashion, I am interested in: "+p[0]+". Please share size, colour options and price.")+'">Ask on WhatsApp</a></article>'}).join("");
+document.getElementById("cf").addEventListener("submit",function(e){e.preventDefault();var f=e.target;
+var m="Hi Noor Fashion, I would like a custom order.\nName: "+f.n.value+"\nGarment: "+f.g.value+"\nColour: "+(f.c.value||"open")+"\nNotes: "+(f.d.value||"none");
+window.open(wa(m),"_blank","noopener")});
+</script>
+</body>
+</html>
